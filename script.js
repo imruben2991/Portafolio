@@ -94,3 +94,10 @@ function mueveElBoton(){
 
 }
 
+function enviarCorreo() {
+    var correo = "im.ruben2991@gmail.com";
+    var asunto = "Asunto del correo"; // Puedes personalizar el asunto si lo deseas
+    var cuerpo = "Contenido del correo"; // Puedes personalizar el contenido del correo si lo deseas
+  
+    window.location.href = "mailto:" + correo + "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(cuerpo);
+  }
